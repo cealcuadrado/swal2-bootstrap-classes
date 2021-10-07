@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-layout',
@@ -12,4 +13,7 @@ export class LayoutComponent implements OnInit {
   ngOnInit() {
   }
 
+  openDialogBoxDefault(): void {
+    Swal.fire('Título', 'Este es el título del cuadro de diálogo', 'warning');
+  }
 }
